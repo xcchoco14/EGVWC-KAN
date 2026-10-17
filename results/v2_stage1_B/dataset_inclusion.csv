@@ -1,0 +1,31 @@
+dataset,cohort,decision,reason,n,d,K,IR,duplicate_rows_grouped,missing_pct,notes
+Breast Cancer Wisconsin (Diagnostic),wisc_diag,include,,569,30,2,1.68,0,0.0,positive class = malignant (sklearn encodes it as 0)
+Breast Cancer Wisconsin (Original),wisc_orig,include,,699,9,2,1.9,236,0.25,"dropped []; 2 = benign, 4 = malignant; 236 rows repeat an earlier row; kept, and identical rows share a fold"
+Breast Cancer Wisconsin (Prognostic),wisc_prog,include,,198,32,2,3.21,0,0.06,dropped ['Time'] (Time is outcome-derived)
+Breast Cancer Coimbra,coimbra,include,,116,9,2,1.23,0,0.0,2 = patient
+Mammographic Mass,mammo,include,,961,4,2,1.16,353,4.16,"dropped ['BI-RADS', 'BI-RADS'] (non-predictive per donor); 353 rows repeat an earlier row; kept, and identical rows share a fold"
+Liver Disorders (BUPA),bupa,include,,345,5,2,1.23,4,0.0,"A3: target = drinks > 3; 'selector' (split flag) removed [McDermott & Forsyth 2016]; 4 rows repeat an earlier row; kept, and identical rows share a fold"
+Indian Liver Patient (ILPD),ilpd,include,,583,10,2,2.49,13,0.07,"1 = liver patient; 13 rows repeat an earlier row; kept, and identical rows share a fold"
+Parkinson's Telemonitoring,parkinsons_tele,include,,5875,16,2,1.0,0,0.0,A4: grouped by subject (42 patients); label = total_UPDRS > 27.58; 16 voice features
+Pima Indians Diabetes,pima,include,,768,8,2,1.87,0,10.61,B6: physiologically impossible zeros → missing
+Early-Stage Diabetes Risk,esdr,include,,520,16,2,1.6,269,0.0,"269 rows repeat an earlier row; kept, and identical rows share a fold"
+Dermatology,derma,include,,366,34,6,5.6,0,0.06,B7: age parsed as numeric
+Heart Disease (Cleveland),cleveland,include,,303,13,2,1.18,0,0.15,target = num > 0
+Statlog (Heart),cleveland,exclude,R4: same cohort as 'Heart Disease (Cleveland)',270,13,2,1.25,0,0.0,2 = presence; row overlap with Cleveland = 100%
+SPECTF Heart,spect,include,,267,44,2,3.85,0,0.0,original continuous ROI counts
+SPECT Heart,spect,exclude,R4: same cohort as 'SPECTF Heart',267,22,2,3.85,39,0.0,"binarised version of SPECTF; 39 rows repeat an earlier row; kept, and identical rows share a fold"
+Acute Inflammations (Bladder),acute,include,,120,6,2,1.03,21,0.0,"donor's first decision; 21 rows repeat an earlier row; kept, and identical rows share a fold"
+Acute Inflammations (Nephritis),acute,exclude,R4: same cohort as 'Acute Inflammations (Bladder)',120,6,2,1.4,21,0.0,"21 rows repeat an earlier row; kept, and identical rows share a fold"
+Chronic Kidney Disease,ckd,include,,400,24,2,1.67,0,10.54,
+Maternal Health Risk,maternal,include,,1014,6,3,1.49,562,0.0,"562 rows repeat an earlier row; kept, and identical rows share a fold"
+Differentiated Thyroid Cancer Recurrence,thyroid,include,,383,16,2,2.55,19,0.0,"19 rows repeat an earlier row; kept, and identical rows share a fold"
+Cardiotocography (NSP),ctg,include,,2126,21,3,9.4,13,0.0,"R3: NSP (normal/suspect/pathologic) is the clinical fetal-state outcome; dropped []; 13 rows repeat an earlier row; kept, and identical rows share a fold"
+Hepatitis,hepatitis,include,,155,19,2,3.84,0,5.67,1 = die
+Cirrhosis Patient Survival,cirrhosis,include,,418,17,3,9.28,0,14.54,dropped [] (N_Days is outcome-derived)
+Myocardial Infarction Complications (AF),mi,include,,1700,102,2,9.0,0,8.78,"target = atrial fibrillation; dropped ['R_AB_1_n', 'R_AB_2_n', 'R_AB_3_n', 'NA_R_1_n', 'NA_R_2_n', 'NA_R_3_n', 'NOT_NA_1_n', 'NOT_NA_2_n', 'NOT_NA_3_n']"
+Breast Tissue,breast_tissue,include,,106,9,6,1.57,1,0.0,"read from the UCI zip (not served by the ucimlrepo API); 6 tissue classes; 1 rows repeat an earlier row; kept, and identical rows share a fold"
+Cryotherapy,cryo,include,,90,6,2,1.14,1,0.0,"read from the UCI zip; 1 = wart cleared after cryotherapy; 1 rows repeat an earlier row; kept, and identical rows share a fold"
+Immunotherapy,immuno,include,,90,7,2,3.74,0,0.0,read from the UCI zip; 1 = wart cleared after immunotherapy
+Primary Tumor,primary_tumor,exclude,R1: smallest class has 1 samples,339,17,21,84.0,30,3.9,"30 rows repeat an earlier row; kept, and identical rows share a fold"
+Lymphography,lympho,exclude,R1: smallest class has 2 samples,148,19,4,40.5,0,5.26,
+Audiology (Standardized),audiology,exclude,R1: smallest class has 1 samples,200,70,24,48.0,0,2.08,

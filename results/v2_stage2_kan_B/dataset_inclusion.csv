@@ -1,0 +1,14 @@
+dataset,cohort,decision,reason,n,d,K,IR,duplicate_rows_grouped,missing_pct,notes
+Heart Failure Clinical Records,hf_faisalabad,include,,299,11,2,2.11,0,0.0,dropped 'time' (follow-up period: patients who die early have short follow-up → outcome-derived)
+HCV Data,hcv_hannover,include,,608,12,2,7.11,0,0.42,"removed 7 'suspect blood donor' rows (ambiguous label); label = liver disease (hepatitis, fibrosis or cirrhosis) vs blood donor"
+Haberman's Survival,haberman,include,,306,3,2,2.78,17,0.0,"2 = died within 5 years of surgery; 17 rows repeat an earlier row; kept, and identical rows share a fold"
+Diabetic Retinopathy Debrecen,dr_debrecen,include,,1151,19,2,1.13,5,0.0,"1 = signs of diabetic retinopathy; 5 rows repeat an earlier row; kept, and identical rows share a fold"
+Thoracic Surgery,thoracic_wroclaw,include,,470,16,2,5.71,0,0.0,T = death within one year after surgery
+Breast Cancer (Ljubljana),breast_ljubljana,include,,286,9,2,2.36,14,0.35,"positive = recurrence; 14 rows repeat an earlier row; kept, and identical rows share a fold"
+Fertility,fertility,include,,100,9,2,7.33,0,0.0,O = altered semen diagnosis
+Glioma Grading,glioma_tcga,include,,839,23,2,1.38,1,0.0,"1 = GBM (high grade), 0 = LGG; 1 rows repeat an earlier row; kept, and identical rows share a fold"
+Cervical Cancer Risk Factors,cervical_caracas,include,,858,32,2,14.6,26,13.19,"target = Biopsy; dropped Hinselmann, Schiller, Citology (other diagnostic tests of the same visit); 26 rows repeat an earlier row; kept, and identical rows share a fold"
+Parkinson's (Little 2008),parkinsons_little,include,,195,22,2,3.06,0,0.0,"A4: grouped by subject (32 subjects, several recordings each)"
+Chronic Kidney Disease Risk (Bangladesh),ckd_bangladesh,include,,200,26,2,1.78,0,0.0,"dropped 'stage' (CKD stage, derived from the outcome) and 'affected'; features are recorded as ranges"
+AIDS Clinical Trials (ACTG 175),actg175,include,,2139,18,2,3.11,0,0.0,"dropped time (follow-up), cd420 / cd820 (CD4/CD8 at week 20, post-baseline), offtrt (post-baseline event), treat (duplicate of trt); baseline variables only"
+Pediatric Appendicitis (Regensburg),appendicitis_regensburg,include,,780,52,2,1.46,0,34.22,"target = Diagnosis; dropped Length_of_Stay (after the outcome) and the other targets Management, Severity"

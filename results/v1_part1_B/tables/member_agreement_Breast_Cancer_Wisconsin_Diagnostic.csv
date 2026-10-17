@@ -1,0 +1,31 @@
+feature,ensemble_effect_range,member_agreement_r
+worst radius,5.147,0.998
+worst concave points,4.854,0.999
+radius error,3.104,0.994
+worst area,2.876,0.974
+worst perimeter,2.626,0.996
+worst texture,2.252,0.969
+mean concave points,1.187,0.971
+worst smoothness,1.026,0.979
+worst symmetry,0.823,0.998
+mean area,0.367,0.76
+compactness error,0.343,0.895
+mean texture,0.327,0.929
+mean fractal dimension,0.298,0.964
+mean perimeter,0.261,0.141
+area error,0.249,0.773
+perimeter error,0.21,0.849
+worst concavity,0.193,0.916
+fractal dimension error,0.179,0.979
+mean concavity,0.159,0.651
+smoothness error,0.101,0.593
+mean radius,0.065,0.029
+mean symmetry,0.048,0.609
+concave points error,0.045,0.489
+symmetry error,0.043,0.457
+mean compactness,0.04,0.094
+texture error,0.037,0.238
+worst fractal dimension,0.035,0.12
+worst compactness,0.024,-0.086
+concavity error,0.022,0.236
+mean smoothness,0.011,-0.077

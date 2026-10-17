@@ -1,0 +1,1 @@
+PASSED on Fertility, Fri Oct  9 02:42:41 2026: kan: sentinel PASSED; permutation not bit-reproducible on this machine (rerun change up to 1.0e+00)

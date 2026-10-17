@@ -1,0 +1,8 @@
+feature,ensemble_effect_range,member_agreement_r
+Glucose,3.831,0.991
+BMI,2.757,0.982
+Age,1.477,0.99
+DiabetesPedigree,0.94,0.991
+Pregnancies,0.343,0.947
+SkinThickness,0.158,0.914
+BloodPressure,0.1,0.664

@@ -1,0 +1,350 @@
+{
+ "p2": {
+  "n_flat_members": 153,
+  "n_folds_with_flat": 66,
+  "flat_gets_max": 0.985,
+  "mean_w_flat": 0.248,
+  "mean_w_other": 0.196
+ },
+ "p4": {
+  "per_dataset": {
+   "Breast_Cancer_Wisconsin_Prognostic": {
+    "theory": 1.168,
+    "obs_shift": 0.527,
+    "pos_single": 0.306,
+    "pos_double": 0.546,
+    "pos_pred": 0.632,
+    "prev": 0.237
+   },
+   "Hepatitis": {
+    "theory": 1.349,
+    "obs_shift": 0.525,
+    "pos_single": 0.52,
+    "pos_double": 0.759,
+    "pos_pred": 0.817,
+    "prev": 0.206
+   },
+   "Immunotherapy": {
+    "theory": -1.324,
+    "obs_shift": -0.93,
+    "pos_single": 0.641,
+    "pos_double": 0.43,
+    "pos_pred": 0.43,
+    "prev": 0.789
+   },
+   "Myocardial_Infarction_Complications_AF": {
+    "theory": 2.197,
+    "obs_shift": 2.774,
+    "pos_single": 0.246,
+    "pos_double": 1.0,
+    "pos_pred": 0.793,
+    "prev": 0.1
+   },
+   "SPECTF_Heart": {
+    "theory": -1.349,
+    "obs_shift": -0.812,
+    "pos_single": 0.77,
+    "pos_double": 0.529,
+    "pos_pred": 0.508,
+    "prev": 0.794
+   }
+  },
+  "n_folds": 75,
+  "spearman_shift_theory": 0.772,
+  "slope": 0.821,
+  "pos_double": 0.653,
+  "pos_pred": 0.636,
+  "pos_single": 0.497,
+  "prev": 0.425
+ },
+ "p5": {
+  "n_members": 2775,
+  "n_gated": 36,
+  "gated_B_ge_logK": 0.917,
+  "share_B_below_logK": 0.452,
+  "median_B_over_logK": 1.085
+ },
+ "p6": {
+  "gamma_eff_range": [
+   0.194,
+   0.953
+  ],
+  "gamma_eff_small": 0.248,
+  "gamma_eff_large": 0.627,
+  "entropy_small": 0.989,
+  "entropy_large": 0.988,
+  "spearman_gamma_entropy": 0.081,
+  "v1_entropy_median": 0.984
+ },
+ "optimism": {
+  "n_units": 360,
+  "best_inner": 0.5814,
+  "outer": 0.5402,
+  "gap": 0.0412,
+  "sel": 0.0839,
+  "p": 0.0007353193273928831,
+  "datasets_positive": 18,
+  "n_datasets": 24,
+  "spearman_n_gap": -0.332,
+  "largest": {
+   "Immunotherapy": 0.207,
+   "Breast Cancer Wisconsin (Prognostic)": 0.162,
+   "Parkinson's Telemonitoring": 0.124
+  }
+ },
+ "hp_stability": {
+  "median_distinct": 12.5,
+  "max_distinct": 14,
+  "median_modal_share": 0.133,
+  "datasets_one_config": 0
+ },
+ "variability": {
+  "v2": {
+   "fold_sd": 0.0968,
+   "repeat_sd": 0.0289
+  },
+  "EGVW-KAN": {
+   "fold_sd": 0.1327,
+   "repeat_sd": 0.0588
+  },
+  "Ens+CW": {
+   "fold_sd": 0.0934,
+   "repeat_sd": 0.0305
+  },
+  "CatBoost": {
+   "fold_sd": 0.0917,
+   "repeat_sd": 0.025
+  },
+  "Logistic regression": {
+   "fold_sd": 0.0907,
+   "repeat_sd": 0.027
+  }
+ },
+ "rank_stability": {
+  "r01": 0.884,
+  "r02": 0.647,
+  "r12": 0.684,
+  "v1_rank_by_repeat": [
+   19,
+   19,
+   19
+  ],
+  "n_methods": 19
+ },
+ "nadeau_bengio": {
+  "Stage 1": {
+   "n": 24,
+   "ci_above_0": 2,
+   "ci_below_0": 0,
+   "per_dataset": {
+    "Acute Inflammations (Bladder)": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "Breast Cancer Coimbra": {
+     "mean": 0.268,
+     "lo": 0.002,
+     "hi": 0.535
+    },
+    "Breast Cancer Wisconsin (Diagnostic)": {
+     "mean": -0.011,
+     "lo": -0.04,
+     "hi": 0.017
+    },
+    "Breast Cancer Wisconsin (Original)": {
+     "mean": -0.005,
+     "lo": -0.021,
+     "hi": 0.01
+    },
+    "Breast Cancer Wisconsin (Prognostic)": {
+     "mean": 0.129,
+     "lo": -0.117,
+     "hi": 0.374
+    },
+    "Breast Tissue": {
+     "mean": 0.179,
+     "lo": -0.205,
+     "hi": 0.563
+    },
+    "Cardiotocography (NSP)": {
+     "mean": 0.024,
+     "lo": -0.015,
+     "hi": 0.063
+    },
+    "Chronic Kidney Disease": {
+     "mean": 0.004,
+     "lo": -0.016,
+     "hi": 0.024
+    },
+    "Cirrhosis Patient Survival": {
+     "mean": 0.306,
+     "lo": 0.119,
+     "hi": 0.492
+    },
+    "Cryotherapy": {
+     "mean": 0.196,
+     "lo": -0.291,
+     "hi": 0.683
+    },
+    "Dermatology": {
+     "mean": 0.002,
+     "lo": -0.016,
+     "hi": 0.021
+    },
+    "Differentiated Thyroid Cancer Recurrence": {
+     "mean": -0.0,
+     "lo": -0.026,
+     "hi": 0.025
+    },
+    "Early-Stage Diabetes Risk": {
+     "mean": 0.11,
+     "lo": -0.166,
+     "hi": 0.385
+    },
+    "Heart Disease (Cleveland)": {
+     "mean": 0.001,
+     "lo": -0.051,
+     "hi": 0.053
+    },
+    "Hepatitis": {
+     "mean": 0.195,
+     "lo": -0.172,
+     "hi": 0.562
+    },
+    "Immunotherapy": {
+     "mean": 0.223,
+     "lo": -0.116,
+     "hi": 0.561
+    },
+    "Indian Liver Patient (ILPD)": {
+     "mean": 0.04,
+     "lo": -0.144,
+     "hi": 0.225
+    },
+    "Liver Disorders (BUPA)": {
+     "mean": -0.045,
+     "lo": -0.143,
+     "hi": 0.053
+    },
+    "Mammographic Mass": {
+     "mean": -0.001,
+     "lo": -0.037,
+     "hi": 0.035
+    },
+    "Maternal Health Risk": {
+     "mean": 0.001,
+     "lo": -0.104,
+     "hi": 0.107
+    },
+    "Myocardial Infarction Complications (AF)": {
+     "mean": -0.033,
+     "lo": -0.106,
+     "hi": 0.041
+    },
+    "Parkinson's Telemonitoring": {
+     "mean": -0.024,
+     "lo": -0.225,
+     "hi": 0.178
+    },
+    "Pima Indians Diabetes": {
+     "mean": -0.028,
+     "lo": -0.066,
+     "hi": 0.009
+    },
+    "SPECTF Heart": {
+     "mean": -0.012,
+     "lo": -0.366,
+     "hi": 0.342
+    }
+   }
+  },
+  "Stage 2": {
+   "n": 13,
+   "ci_above_0": 0,
+   "ci_below_0": 1,
+   "per_dataset": {
+    "AIDS Clinical Trials (ACTG 175)": {
+     "mean": -0.077,
+     "lo": -0.123,
+     "hi": -0.03
+    },
+    "Breast Cancer (Ljubljana)": {
+     "mean": -0.032,
+     "lo": -0.259,
+     "hi": 0.195
+    },
+    "Cervical Cancer Risk Factors": {
+     "mean": 0.018,
+     "lo": -0.118,
+     "hi": 0.154
+    },
+    "Chronic Kidney Disease Risk (Bangladesh)": {
+     "mean": -0.006,
+     "lo": -0.045,
+     "hi": 0.033
+    },
+    "Diabetic Retinopathy Debrecen": {
+     "mean": -0.01,
+     "lo": -0.055,
+     "hi": 0.036
+    },
+    "Fertility": {
+     "mean": 0.042,
+     "lo": -0.217,
+     "hi": 0.301
+    },
+    "Glioma Grading": {
+     "mean": 0.001,
+     "lo": -0.014,
+     "hi": 0.016
+    },
+    "HCV Data": {
+     "mean": 0.102,
+     "lo": -0.142,
+     "hi": 0.347
+    },
+    "Haberman's Survival": {
+     "mean": -0.041,
+     "lo": -0.234,
+     "hi": 0.152
+    },
+    "Heart Failure Clinical Records": {
+     "mean": 0.165,
+     "lo": -0.087,
+     "hi": 0.418
+    },
+    "Parkinson's (Little 2008)": {
+     "mean": 0.251,
+     "lo": -0.157,
+     "hi": 0.66
+    },
+    "Pediatric Appendicitis (Regensburg)": {
+     "mean": 0.022,
+     "lo": -0.046,
+     "hi": 0.09
+    },
+    "Thoracic Surgery": {
+     "mean": 0.008,
+     "lo": -0.192,
+     "hi": 0.209
+    }
+   }
+  }
+ },
+ "collapse_vs_gain": {
+  "spearman": 0.667,
+  "n_with_collapse": 17,
+  "n_total": 37,
+  "gain_with": 0.1268,
+  "gain_without": -0.0096,
+  "share_of_positive_gain": 0.972
+ },
+ "mi_final": {
+  "pos_single": 0.246,
+  "pos_double": 1.0,
+  "prev": 0.1,
+  "mcc_single": 0.182,
+  "mcc_double": 0.002
+ }
+}

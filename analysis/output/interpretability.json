@@ -1,0 +1,60 @@
+{
+ "Pima Indians Diabetes": {
+  "n_features": 7,
+  "n_big": 4,
+  "big_min_r": 0.982,
+  "small_median_r": 0.914,
+  "small_min_r": 0.664,
+  "top": [
+   [
+    "Glucose",
+    3.831,
+    0.991
+   ],
+   [
+    "BMI",
+    2.757,
+    0.982
+   ],
+   [
+    "Age",
+    1.477,
+    0.99
+   ],
+   [
+    "DiabetesPedigree",
+    0.94,
+    0.991
+   ]
+  ]
+ },
+ "Breast Cancer Wisconsin (Diagnostic)": {
+  "n_features": 30,
+  "n_big": 9,
+  "big_min_r": 0.969,
+  "small_median_r": 0.593,
+  "small_min_r": -0.086,
+  "top": [
+   [
+    "worst radius",
+    5.147,
+    0.998
+   ],
+   [
+    "worst concave points",
+    4.854,
+    0.999
+   ],
+   [
+    "radius error",
+    3.104,
+    0.994
+   ],
+   [
+    "worst area",
+    2.876,
+    0.974
+   ]
+  ]
+ }
+}
