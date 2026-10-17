@@ -2,8 +2,8 @@
 
 Code, results and pre-registration documents for the paper
 
-> [Author names]. *Failure Analysis and Pre-Registered Repair of Reliability-Weighted Kolmogorov–Arnold Network
-> Ensembles for Imbalanced Clinical Tabular Data.* [Journal, year, DOI].
+> E. A. Nurrohmah et al. *Failure Analysis and Pre-Registered Repair of Reliability-Weighted Kolmogorov–Arnold Network
+> Ensembles for Imbalanced Clinical Tabular Data.* Manuscript in preparation, 2026.
 
 The paper evaluates EGVWC-KAN, an ensemble of five Kolmogorov–Arnold Networks (KANs) whose members are weighted by
 validation loss and logit dispersion, against 18 other methods on 24 tabular clinical datasets. The weighting fails, and
@@ -102,12 +102,23 @@ python preregistration/verify.py
 
 ## Citation
 
-If you use this code or the results, please cite the paper above. [BibTeX entry to be added after publication.]
+If you use this code or the results, please cite the paper above. Until it is published:
+
+```
+@unpublished{nurrohmah2026egvwckan,
+  author = {Nurrohmah, Erna Alfi and others},
+  title  = {Failure Analysis and Pre-Registered Repair of Reliability-Weighted {Kolmogorov--Arnold} Network
+            Ensembles for Imbalanced Clinical Tabular Data},
+  note   = {Manuscript in preparation. Code and data: https://github.com/xcchoco14/EGVWC-KAN},
+  year   = {2026}
+}
+```
 
 ## License
 
-[To be decided.]
+The code is released under the MIT License (see `LICENSE`). The datasets themselves come from the UCI Machine Learning
+Repository and scikit-learn and keep their original licenses.
 
 ## Contact
 
-[Name, email]
+Erna Alfi Nurrohmah, ernaalfin14@gmail.com
